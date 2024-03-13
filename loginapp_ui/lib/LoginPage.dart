@@ -1,7 +1,5 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class LoginPage_Ui extends StatefulWidget {
