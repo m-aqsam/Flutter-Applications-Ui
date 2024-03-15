@@ -26,9 +26,10 @@ class _Login_PageState extends State<Login_Page> {
         backgroundColor: Colors.grey[300],
         body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                height: 100,
+                height: 30,
               ),
               // Icon
               Icon(
@@ -87,7 +88,7 @@ class _Login_PageState extends State<Login_Page> {
                 ),
               ),
 
-              SizedBox(height: 20),
+              SizedBox(height: 25),
 
               // Sign In Button
 
@@ -126,7 +127,32 @@ class _Login_PageState extends State<Login_Page> {
                 ),
               ),
 
-              // Google Logo
+              SizedBox(height: 30),
+
+              // Google Logo / Apple Logo
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconTile(imagePath: 'lib/images/google.png'),
+                  SizedBox(width: 12),
+                  IconTile(imagePath: 'lib/images/apple.png'),
+                ],
+              ),
+
+              SizedBox(height: 30),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Not a member?"),
+                  SizedBox(width: 6),
+                  Text(
+                    "Register now",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, color: Colors.blue),
+                  ),
+                ],
+              )
             ],
           ),
         ),
