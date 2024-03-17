@@ -299,7 +299,8 @@ class _Home_ScreenState extends State<Home_Screen> {
                   BottomNavigationBarItem(
                       icon: Icon(Icons.notifications), label: 'Notification'),
                   BottomNavigationBarItem(
-                      icon: Icon(Icons.home), label: 'Home'),
+                      icon: Icon(Icons.calendar_month_rounded),
+                      label: 'Appointment'),
                 ],
               ),
             ],
