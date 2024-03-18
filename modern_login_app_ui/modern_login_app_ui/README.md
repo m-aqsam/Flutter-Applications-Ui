@@ -2,13 +2,7 @@
 
 A new Flutter project.
 
-
-
-![Screenshot_1710489324](https://github.com/m-aqsam/Flutter-Applications-Ui/assets/121599719/8c731a15-56c2-4fb1-a76d-f79a9ce33d85)
-
-
-
-## Getting Started
+Getting Started![176shots_so](https://github.com/m-aqsam/Flutter-Applications-Ui/assets/121599719/91c6495c-8d2f-41ea-bf28-a16214ffffd1)
 
 This project is a starting point for a Flutter application.
 
