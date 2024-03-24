@@ -9,7 +9,7 @@ class User_SearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('SearchPage'),
+        child: Text('Search Page'),
       ),
     );
   }
