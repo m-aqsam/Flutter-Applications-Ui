@@ -3,6 +3,9 @@
 # tiktok_ui
 
 A new Flutter project.
+![571shots_so](https://github.com/m-aqsam/Flutter-Applications-Ui/assets/121599719/089ee5df-73fa-4bb1-95c3-27cd5260e79e)
+
+
 
 https://github.com/m-aqsam/Flutter-Applications-Ui/assets/121599719/cc079e52-32fd-44d8-8059-f9a0e0cffc54
 
