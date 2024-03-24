@@ -19,9 +19,15 @@ class PostButton extends StatelessWidget {
         children: [
           Icon(
             icon,
+            color: Colors.white,
             size: 38,
           ),
-          Text(number),
+          Text(
+            number,
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
         ],
       ),
     );

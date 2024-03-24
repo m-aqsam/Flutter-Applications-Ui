@@ -137,7 +137,7 @@ class PostTemplate extends StatelessWidget {
                   ),
                 ),
 
-                //...........
+                // Tik Tok Logo
               ],
             ),
           ),
