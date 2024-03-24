@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tiktok_ui/HomePage_Components/Posts/Post_Template.dart';
+import 'package:tiktok_ui/HomePage_Components/Post_Template.dart';
 
 class Post2 extends StatelessWidget {
   const Post2({super.key});
