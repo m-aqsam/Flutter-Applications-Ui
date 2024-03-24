@@ -1,9 +1,12 @@
+
+
 # tiktok_ui
 
 A new Flutter project.
 
+https://github.com/m-aqsam/Flutter-Applications-Ui/assets/121599719/cc079e52-32fd-44d8-8059-f9a0e0cffc54
 
-[tiktok ui.webm](https://github.com/m-aqsam/Flutter-Applications-Ui/assets/121599719/5f4e7bb1-8a58-40f1-83ac-c5ee11e98f9a)
+
 
 ## Getting Started
 
