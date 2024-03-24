@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:tiktok_ui/_NavScreens/User_CreatePage.dart';
 import 'package:tiktok_ui/_NavScreens/User_HomePage.dart';
 import 'package:tiktok_ui/_NavScreens/User_InboxPage.dart';
+import 'package:tiktok_ui/_NavScreens/User_ProfilePage.dart';
 import 'package:tiktok_ui/_NavScreens/User_SearchPage.dart';
 
 class MainPage extends StatefulWidget {
@@ -27,7 +28,7 @@ class _HomePageState extends State<MainPage> {
     User_SearchPage(),
     User_CreatePage(),
     User_InboxPage(),
-    User_SearchPage(),
+    User_ProfilePage(),
   ];
 
   @override
