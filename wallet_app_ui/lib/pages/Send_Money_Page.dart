@@ -1,12 +1,11 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_final_fields
 
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:wallet_app_ui/components/HomePage_Components/My_Button.dart';
+
 import 'package:wallet_app_ui/components/SendMoney_Components/Search_Card.dart';
 import 'package:wallet_app_ui/components/SendMoney_Components/SendMoeny_Button.dart';
 import 'package:wallet_app_ui/pages/Home_Page.dart';
+import 'package:wallet_app_ui/components/SendMoney_Components/MyListView.dart';
 
 class Send_Money_Page extends StatefulWidget {
   const Send_Money_Page({super.key});
@@ -84,7 +83,7 @@ class _Send_Money_PageState extends State<Send_Money_Page> {
                 ),
               ),
 
-              SizedBox(height: 20),
+              SizedBox(height: 12),
 
               // Send Buttons
 
@@ -100,7 +99,7 @@ class _Send_Money_PageState extends State<Send_Money_Page> {
                       text1: "To your",
                       text2: "Own account",
                     ),
-                    SizedBox(width: 30),
+                    SizedBox(width: 25),
 
                     // button 2
 
@@ -113,13 +112,21 @@ class _Send_Money_PageState extends State<Send_Money_Page> {
                 ),
               ),
 
-              SizedBox(height: 35),
+              SizedBox(height: 22),
 
               // Search Card
 
               Search_Card(),
 
+              SizedBox(height: 4),
+
               // Contacts List
+
+              Expanded(
+                child: Container(
+                  child: MyListView(),
+                ),
+              )
             ],
           ),
         ));
