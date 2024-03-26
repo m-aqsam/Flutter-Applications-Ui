@@ -2,10 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:wallet_app_ui/components/HomePage_Components/MyBottomSheet.dart';
 import 'package:wallet_app_ui/components/HomePage_Components/MyListTile.dart';
 import 'package:wallet_app_ui/components/HomePage_Components/My_Button.dart';
 import 'package:wallet_app_ui/components/HomePage_Components/My_Card.dart';
 import 'package:wallet_app_ui/components/HomePage_Components/Top_Bar.dart';
+import 'package:wallet_app_ui/pages/Get_Pay_Page.dart';
 
 import 'package:wallet_app_ui/pages/Send_Money_Page.dart';
 
@@ -28,8 +30,25 @@ class _Home_PageState extends State<Home_Page> {
     );
   }
 
-  void pay_ontap() {}
+  void pay_ontap() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Get_Pay_Page()),
+    );
+  }
+
   void bill_ontap() {}
+
+  void qr_Code_Scanner() {
+    showModalBottomSheet(
+      backgroundColor: Colors.grey[300],
+      context: context,
+      builder: (BuildContext context) {
+        return MyBottomSheet();
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,12 +56,11 @@ class _Home_PageState extends State<Home_Page> {
       home: Scaffold(
         backgroundColor: Colors.grey[300],
 
-        // Float
+        // Floating Action Button (Qr Code Scanner)
 
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: qr_Code_Scanner,
           backgroundColor: Colors.deepPurple[300],
-          // label: Text("Scan Code"),
           child: Icon(
             Icons.qr_code,
             size: 40,
@@ -188,6 +206,8 @@ class _Home_PageState extends State<Home_Page> {
               )
 
               // Bottom Nav Bar
+
+              // At the top of scaffold
             ],
           ),
         ),
