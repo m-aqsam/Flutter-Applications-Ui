@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:wallet_app_ui/pages/Home_Page.dart';
-import 'package:wallet_app_ui/pages/MyListView.dart';
 
 void main() {
   runApp(const MyApp());
