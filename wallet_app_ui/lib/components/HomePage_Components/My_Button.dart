@@ -18,7 +18,7 @@ class My_Button extends StatelessWidget {
     return Column(
       children: [
         // icon
-        GestureDetector(
+        InkWell(
           // On tap
 
           onTap: my_ontap,
