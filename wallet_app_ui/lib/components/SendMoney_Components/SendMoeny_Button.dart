@@ -18,7 +18,7 @@ class SendMoney_Button extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(20),
       height: 190,
-      width: 170,
+      width: 160,
       decoration: BoxDecoration(
         color: Colors.grey[300],
         //shape: BoxShape.circle,
