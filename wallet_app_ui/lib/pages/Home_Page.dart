@@ -7,6 +7,7 @@ import 'package:wallet_app_ui/components/HomePage_Components/MyListTile.dart';
 import 'package:wallet_app_ui/components/HomePage_Components/My_Button.dart';
 import 'package:wallet_app_ui/components/HomePage_Components/My_Card.dart';
 import 'package:wallet_app_ui/components/HomePage_Components/Top_Bar.dart';
+import 'package:wallet_app_ui/pages/Bill_Payment_Page.dart';
 import 'package:wallet_app_ui/pages/Get_Pay_Page.dart';
 
 import 'package:wallet_app_ui/pages/Send_Money_Page.dart';
@@ -37,7 +38,12 @@ class _Home_PageState extends State<Home_Page> {
     );
   }
 
-  void bill_ontap() {}
+  void bill_ontap() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Bill_Payment_Page()),
+    );
+  }
 
   void qr_Code_Scanner() {
     showModalBottomSheet(
