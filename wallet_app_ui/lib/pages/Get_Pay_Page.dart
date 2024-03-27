@@ -20,8 +20,35 @@ class _Get_Pay_PageState extends State<Get_Pay_Page> {
     );
   }
 
-  void copy_Clipboard() {
+  // Wallet number copy
+
+  void wallet_Copy_Clipboard() {
     final value = ClipboardData(text: "03180077899");
+    Clipboard.setData(value);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Center(
+            child: Text(
+          "Copy",
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w600,
+          ),
+        )),
+        backgroundColor: Colors.black,
+        behavior: SnackBarBehavior.floating,
+        margin: EdgeInsets.symmetric(horizontal: 145, vertical: 15),
+        duration: Duration(seconds: 1),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30),
+        ),
+      ),
+    );
+  }
+  // IBAN number copy
+
+  void IBAN_Copy_Clipboard() {
+    final value = ClipboardData(text: "PK41 Wallet 0000 0031 8635 6456");
     Clipboard.setData(value);
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
@@ -52,20 +79,24 @@ class _Get_Pay_PageState extends State<Get_Pay_Page> {
       backgroundColor: Colors.grey[300],
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 25),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            // mainAxisAlignment: MainAxisAlignment.center,
+            //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(height: 10),
               // Back Icons
 
-              IconButton(
-                onPressed: return_PreviousPage,
-                icon: Icon(
-                  Icons.navigate_before_rounded,
-                  size: 45,
-                ),
+              Row(
+                children: [
+                  InkWell(
+                    onTap: return_PreviousPage,
+                    child: Icon(
+                      Icons.navigate_before_rounded,
+                      size: 45,
+                    ),
+                  ),
+                ],
               ),
 
               SizedBox(height: 12),
@@ -135,7 +166,7 @@ class _Get_Pay_PageState extends State<Get_Pay_Page> {
               MyContainer(
                 accType: "My Wallet account number",
                 accNumber: "03180077899",
-                myontap: copy_Clipboard,
+                myontap: wallet_Copy_Clipboard,
               ),
 
               SizedBox(height: 25),
@@ -155,7 +186,7 @@ class _Get_Pay_PageState extends State<Get_Pay_Page> {
               MyContainer(
                 accType: "My Wallet IBAN number",
                 accNumber: "PK41 Wallet 0000 0031 8635 6456",
-                myontap: copy_Clipboard,
+                myontap: IBAN_Copy_Clipboard,
               ),
 
               //container
