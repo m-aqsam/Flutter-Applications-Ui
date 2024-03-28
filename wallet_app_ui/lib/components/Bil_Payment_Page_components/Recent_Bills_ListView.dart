@@ -20,7 +20,11 @@ class _MyListViewState extends State<Recent_Bills_ListView> {
       "name": "MEPCO",
       "bill_id": "15154140963600"
     },
-    {"icon": "lib/icons/phone-call.png", "name": "Telepohone", "bill_id": ""},
+    {
+      "icon": "lib/icons/phone-call.png",
+      "name": "Telepohone",
+      "bill_id": "+1 730 655 7632"
+    },
   ];
 
   @override
