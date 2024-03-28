@@ -15,11 +15,6 @@ class Send_Money_Page extends StatefulWidget {
 }
 
 class _Send_Money_PageState extends State<Send_Money_Page> {
-  List<Map<String, dynamic>> _allcontacts = [
-    {"id": 1, "name": "andy", "age": 20},
-    {"id": 1, "name": "andy", "age": 20},
-    {"id": 1, "name": "andy", "age": 20},
-  ];
   void return_PreviousPage() {
     Navigator.push(
       context,
