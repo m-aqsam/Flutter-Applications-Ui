@@ -13,12 +13,13 @@ class MyNavigation_Bar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
+      padding: const EdgeInsets.symmetric(vertical: 12),
       child: Container(
         child: GNav(
           color: Colors.grey[400],
           activeColor: Colors.grey[800],
           tabActiveBorder: Border.all(color: Colors.white),
+          tabBorder: Border.all(color: Colors.grey.shade100),
           tabBackgroundColor: Colors.grey.shade100,
           tabBorderRadius: 16,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -31,6 +32,10 @@ class MyNavigation_Bar extends StatelessWidget {
             GButton(
               icon: Icons.add_shopping_cart_rounded,
               text: " Cart",
+            ),
+            GButton(
+              icon: Icons.person,
+              text: " Profile",
             ),
           ],
         ),
