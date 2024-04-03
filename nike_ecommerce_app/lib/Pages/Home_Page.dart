@@ -99,7 +99,7 @@ class _Home_PageState extends State<Home_Page> {
                 ),
               ),
             ),
-            // Home Buttons
+            // Profile Buttons
 
             InkWell(
               onTap: () {
