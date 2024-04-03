@@ -107,12 +107,12 @@ class _Home_PageState extends State<Home_Page> {
               },
               child: ListTile(
                 leading: Icon(
-                  Icons.home,
+                  Icons.person,
                   color: Colors.white,
                   size: 30,
                 ),
                 title: Text(
-                  "Home",
+                  "Profile",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
