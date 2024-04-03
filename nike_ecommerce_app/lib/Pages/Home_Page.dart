@@ -120,23 +120,20 @@ class _Home_PageState extends State<Home_Page> {
                 ),
               ),
             ),
-          ],
-        ),
-      ),
-            // About Buttons
+            // About  Buttons
 
-            InkWell( 
+            InkWell(
               onTap: () {
                 // on tap move to the page
               },
               child: ListTile(
                 leading: Icon(
-                  Icons.person,
+                  Icons.more,
                   color: Colors.white,
                   size: 30,
                 ),
                 title: Text(
-                  "Profile",
+                  "About us",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
