@@ -123,6 +123,30 @@ class _Home_PageState extends State<Home_Page> {
           ],
         ),
       ),
+            // About Buttons
+
+            InkWell( 
+              onTap: () {
+                // on tap move to the page
+              },
+              child: ListTile(
+                leading: Icon(
+                  Icons.person,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                title: Text(
+                  "Profile",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
 
       // **************** Bottom Nav Bar **************
 
