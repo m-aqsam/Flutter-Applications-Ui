@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:nike_ecommerce_app/Pages/Add_To_Cart_Page.dart';
+import 'package:nike_ecommerce_app/Pages/Profile_Page.dart';
 import 'package:nike_ecommerce_app/Pages/Shop_Page.dart';
 import 'package:nike_ecommerce_app/components/MyNavigation_Bar.dart';
 
@@ -28,6 +29,7 @@ class _Home_PageState extends State<Home_Page> {
   List<Widget> _pages = [
     Shop_Page(),
     Add_To_Cart_Page(),
+    Profile_Page(),
   ];
 
   @override
@@ -62,15 +64,62 @@ class _Home_PageState extends State<Home_Page> {
             // logo
 
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 60),
+              padding: const EdgeInsets.only(top: 60),
               child: Image.asset(
                 "lib/images/nikelogo1.png",
                 height: 200,
                 color: Colors.white,
               ),
-            )
+            ),
 
-            // Buttons
+            // Divider
+
+            Divider(
+              color: Colors.grey[700],
+            ),
+
+            // Home Buttons
+
+            InkWell(
+              onTap: () {
+                // on tap move to the page
+              },
+              child: ListTile(
+                leading: Icon(
+                  Icons.home,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            // Home Buttons
+
+            InkWell(
+              onTap: () {
+                // on tap move to the page
+              },
+              child: ListTile(
+                leading: Icon(
+                  Icons.home,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                title: Text(
+                  "Home",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
