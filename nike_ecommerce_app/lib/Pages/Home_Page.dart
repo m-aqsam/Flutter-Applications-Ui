@@ -141,6 +141,27 @@ class _Home_PageState extends State<Home_Page> {
                 ),
               ),
             ),
+            // Logout  Buttons
+
+            InkWell(
+              onTap: () {
+                // on tap move to the page
+              },
+              child: ListTile(
+                leading: Icon(
+                  Icons.logout,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                title: Text(
+                  "Logout",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
