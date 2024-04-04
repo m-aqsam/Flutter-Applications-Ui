@@ -34,7 +34,7 @@ class Intro_Page extends StatelessWidget {
                 // // Nike shoes image
 
                 Image.asset(
-                  "lib/images/introimage3.png",
+                  "lib/images/introimage5.png",
                   height: 400,
                 ),
               ],
