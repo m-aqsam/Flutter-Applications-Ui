@@ -35,6 +35,8 @@ class Shop_Page extends StatelessWidget {
 
         // ******************** Message ************************
 
+        Text("Message"),
+
         // ******************  Hot Picks / Shoes List  **********************
       ],
     );
