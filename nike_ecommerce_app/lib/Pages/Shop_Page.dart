@@ -38,7 +38,7 @@ class Shop_Page extends StatelessWidget {
         Text(
           "Message",
           style: TextStyle(
-            color: Colors.grey,
+            color: Colors.grey[600],
           ),
         ),
 
