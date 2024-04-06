@@ -13,10 +13,24 @@ class Shop_Page extends StatefulWidget {
 
 class _Shop_PageState extends State<Shop_Page> {
   final List<Widget> myitems = [
-    Image.asset("lib/images/adimage1.png"),
-    Image.asset("lib/images/adimage2.png"),
-    Image.asset("lib/images/adimage3.png"),
-    Image.asset("lib/images/adimage4.png"),
+    // New Update Images
+
+    // Image.asset("lib/images/newadimageupdate1.png"),
+    // Image.asset("lib/images/newadimageupdate2.png"),
+    // Image.asset("lib/images/newadimageupdate3.png"),
+    // Image.asset("lib/images/newadimageupdate4.png"),
+
+    // New Images
+    Image.asset("lib/images/newadimage1.png"),
+    Image.asset("lib/images/newadimage2.png"),
+    Image.asset("lib/images/newadimage3.png"),
+    Image.asset("lib/images/newadimage4.png"),
+
+    // old images
+    // Image.asset("lib/images/adimage1.png"),
+    // Image.asset("lib/images/adimage2.png"),
+    // Image.asset("lib/images/adimage3.png"),
+    // Image.asset("lib/images/adimage4.png"),
   ];
 
   @override
@@ -47,12 +61,10 @@ class _Shop_PageState extends State<Shop_Page> {
           ),
         ),
 
-        SizedBox(height: 12),
-
         // ******************  Carousel  Slider **********************
 
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15),
+          padding: const EdgeInsets.symmetric(horizontal: 30),
           child: CarouselSlider(
             options: CarouselOptions(
               height: 150,
@@ -66,14 +78,14 @@ class _Shop_PageState extends State<Shop_Page> {
               autoPlayAnimationDuration: Duration(milliseconds: 800),
               autoPlayCurve: Curves.fastOutSlowIn,
               enlargeCenterPage: true,
-              enlargeFactor: 0.3,
+              enlargeFactor: 0.5,
               scrollDirection: Axis.horizontal,
             ),
             items: myitems,
           ),
         ),
 
-        SizedBox(height: 6),
+        // SizedBox(height: 0),
 
         // ******************  Hot Picks / Shoes List  **********************
 
@@ -81,7 +93,7 @@ class _Shop_PageState extends State<Shop_Page> {
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Container(
             height: 460,
-            //color: Colors.amber[100],
+            // color: Colors.amber[100],
             child: Center(child: MyListView()),
           ),
         ),

@@ -207,68 +207,6 @@ class _MyListViewState extends State<MyListView> {
                             ),
                           ),
                         ),
-
-                        // Shoe Name
-
-                        // Column(
-                        //   crossAxisAlignment: CrossAxisAlignment.start,
-                        //   children: [
-                        //     Padding(
-                        //       padding:
-                        //           const EdgeInsets.symmetric(horizontal: 20),
-                        //       child: Text(
-                        //         _shoesList[index]["shoeName"].toString(),
-                        //         style: TextStyle(
-                        //           fontSize: 20,
-                        //           fontWeight: FontWeight.bold,
-                        //           color: Colors.black,
-                        //         ),
-                        //       ),
-                        //     ),
-
-                        //     SizedBox(height: 6),
-
-                        //     // Shoe Price
-
-                        //     Padding(
-                        //       padding:
-                        //           const EdgeInsets.symmetric(horizontal: 20),
-                        //       child: Row(
-                        //         //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        //         children: [
-                        //           //  Price
-
-                        //           Text(
-                        //             _shoesList[index]["shoePrice"].toString(),
-                        //             style: TextStyle(
-                        //               fontSize: 20,
-                        //               fontWeight: FontWeight.bold,
-                        //               color: Colors.black,
-                        //             ),
-                        //           ),
-
-                        //           SizedBox(width: 12),
-
-                        //           //  Price Before
-
-                        //           Text(
-                        //             _shoesList[index]["originalPrice"]
-                        //                 .toString(),
-                        //             style: TextStyle(
-                        //               color: Colors.grey[400],
-                        //               decoration: TextDecoration.lineThrough,
-                        //               fontSize: 16,
-                        //             ),
-                        //           ),
-                        //         ],
-                        //       ),
-                        //     )
-                        //   ],
-                        // ),
-
-                        // Shoe Price
-
-                        // Add To Cart Button
                       ],
                     ),
                   ),
