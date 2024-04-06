@@ -22,25 +22,25 @@ class Intro_Page extends StatelessWidget {
             // Stack ->  Nike + Shoes
 
             Stack(
-              alignment: Alignment.center,
+              alignment: Alignment.topCenter,
               children: [
                 // Nike Logo
 
                 Image.asset(
-                  "lib/images/nikelogo1.png",
-                  height: 350,
+                  "lib/images/nikelogo2.png",
+                  height: 360,
                 ),
 
                 // // Nike shoes image
 
                 Image.asset(
-                  "lib/images/introimage5.png",
+                  "lib/images/introimage6.png",
                   height: 400,
                 ),
               ],
             ),
 
-            SizedBox(height: 35),
+            SizedBox(height: 10),
 
             // Just do it
 
@@ -97,7 +97,7 @@ class Intro_Page extends StatelessWidget {
               ),
             ),
 
-            SizedBox(height: 90),
+            SizedBox(height: 120),
           ],
         ),
       ),
