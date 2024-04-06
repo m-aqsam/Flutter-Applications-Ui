@@ -14,22 +14,34 @@ class _MyListViewState extends State<MyListView> {
     {
       "shoeImage": "lib/images/shoes1.png",
       "shoeName": "Zoey Bennett",
-      "description": "Mens Shoes"
+      "shoePrice": "\$205",
+      "originalPrice": "\$230",
+      "description":
+          "The forward-thinking design of this latest signature shoe."
     },
     {
       "shoeImage": "lib/images/shoes2.png",
       "shoeName": "Zoey Bennett",
-      "description": "Mens Shoes"
+      "shoePrice": "\$236",
+      "originalPrice": "\$260",
+      "description":
+          "The forward-thinking design of this latest signature shoe."
     },
     {
-      "shoeImage": "lib/images/shoes3.png",
+      "shoeImage": "lib/images/shoes6.png",
       "shoeName": "Zoey Bennett",
-      "description": "Mens Shoes"
+      "shoePrice": "\$180",
+      "originalPrice": "\$210",
+      "description":
+          "The forward-thinking design of this latest signature shoe."
     },
     {
       "shoeImage": "lib/images/shoes4.png",
       "shoeName": "Zoey Bennett",
-      "description": "Mens Shoes"
+      "shoePrice": "\$250",
+      "originalPrice": "\$270",
+      "description":
+          "The forward-thinking design of this latest signature shoe."
     },
   ];
   @override
@@ -42,41 +54,225 @@ class _MyListViewState extends State<MyListView> {
             height: 200,
             width: 330,
             decoration: BoxDecoration(
-              color: Colors.deepPurple,
+              color: Colors.grey[200],
               borderRadius: BorderRadius.circular(12),
-              gradient: LinearGradient(
-                colors: [
-                  Colors.white60,
-                  Colors.grey.shade400,
-                ],
-                begin: Alignment.topRight,
-                end: Alignment.topLeft,
-              ),
+              // gradient: LinearGradient(
+              //   colors: [
+              //     Colors.grey.shade900,
+              //     Colors.white60,
+              //   ],
+              //   begin: Alignment.topRight,
+              //   end: Alignment.topLeft,
+              // ),
             ),
             child: Column(
+              // mainAxisAlignment: MainAxisAlignment.start,
+              // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(height: 40),
                 // Shoe Image
 
                 Container(
-                  height: 185,
+                  height: 190,
+                  // color: Colors.white,
                   child: Image.asset(
                     _shoesList[index]['shoeImage'].toString(),
                   ),
                 ),
 
-                // But Container
+                SizedBox(height: 50),
+
+                // About Container
 
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.black87,
+                      // color: Colors.pink,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(25),
                         topRight: Radius.circular(25),
                       ),
                     ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // Description
+
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 12),
+                          child: Text(
+                            _shoesList[index]["description"].toString(),
+                            style: TextStyle(
+                              color: Colors.grey[700],
+                              fontSize: 16,
+                            ),
+                          ),
+                        ),
+
+                        SizedBox(height: 6),
+
+                        // ********************** Buy Options ******************
+
+                        Expanded(
+                          child: Container(
+                            // color: Colors.deepPurple[300],
+
+                            // Main Container Row
+
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 20, vertical: 6),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      // ****** Column  Children *****
+
+                                      // Shoe Name
+
+                                      Text(
+                                        _shoesList[index]["shoeName"]
+                                            .toString(),
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black,
+                                        ),
+                                      ),
+
+                                      SizedBox(height: 5),
+
+                                      // *****  Shoe Price *****
+
+                                      Row(
+                                        children: [
+                                          // Price Now
+                                          Text(
+                                            _shoesList[index]["shoePrice"]
+                                                .toString(),
+                                            style: TextStyle(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black,
+                                            ),
+                                          ),
+
+                                          SizedBox(width: 12),
+
+                                          // Price Before
+
+                                          Text(
+                                            _shoesList[index]["originalPrice"]
+                                                .toString(),
+                                            style: TextStyle(
+                                              color: Colors.grey[400],
+                                              decoration:
+                                                  TextDecoration.lineThrough,
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+
+                                // Row Children
+
+                                // ************** Add to cart Button ***********
+
+                                InkWell(
+                                  onTap: () {},
+                                  child: Container(
+                                    height: 80,
+                                    width: 80,
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(12),
+                                          bottomRight: Radius.circular(12)),
+                                    ),
+                                    child: Icon(
+                                      Icons.add,
+                                      color: Colors.white,
+                                      size: 30,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+
+                        // Shoe Name
+
+                        // Column(
+                        //   crossAxisAlignment: CrossAxisAlignment.start,
+                        //   children: [
+                        //     Padding(
+                        //       padding:
+                        //           const EdgeInsets.symmetric(horizontal: 20),
+                        //       child: Text(
+                        //         _shoesList[index]["shoeName"].toString(),
+                        //         style: TextStyle(
+                        //           fontSize: 20,
+                        //           fontWeight: FontWeight.bold,
+                        //           color: Colors.black,
+                        //         ),
+                        //       ),
+                        //     ),
+
+                        //     SizedBox(height: 6),
+
+                        //     // Shoe Price
+
+                        //     Padding(
+                        //       padding:
+                        //           const EdgeInsets.symmetric(horizontal: 20),
+                        //       child: Row(
+                        //         //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //         children: [
+                        //           //  Price
+
+                        //           Text(
+                        //             _shoesList[index]["shoePrice"].toString(),
+                        //             style: TextStyle(
+                        //               fontSize: 20,
+                        //               fontWeight: FontWeight.bold,
+                        //               color: Colors.black,
+                        //             ),
+                        //           ),
+
+                        //           SizedBox(width: 12),
+
+                        //           //  Price Before
+
+                        //           Text(
+                        //             _shoesList[index]["originalPrice"]
+                        //                 .toString(),
+                        //             style: TextStyle(
+                        //               color: Colors.grey[400],
+                        //               decoration: TextDecoration.lineThrough,
+                        //               fontSize: 16,
+                        //             ),
+                        //           ),
+                        //         ],
+                        //       ),
+                        //     )
+                        //   ],
+                        // ),
+
+                        // Shoe Price
+
+                        // Add To Cart Button
+                      ],
+                    ),
                   ),
-                )
+                ),
               ],
             ),
           ),
