@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:nike_ecommerce_app/Pages/Home_Page.dart';
 import 'package:nike_ecommerce_app/Pages/Intro_Page.dart';
 
 void main() {
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Intro_Page(), 
+      home: Intro_Page(),
     );
   }
 }
