@@ -93,7 +93,9 @@ class _Shop_PageState extends State<Shop_Page> {
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Container(
             height: 460,
-            child: Center(child: MyListView()),
+            child: Center(
+              child: MyListView(),
+            ),
           ),
         ),
       ],
