@@ -14,7 +14,7 @@ class _MyListViewState extends State<MyListView> {
     {
       "shoeImage": "lib/images/shoes1.png",
       "shoeName": "Zoey Bennett",
-      "shoePrice": "\$205",
+      "shoePrice": "\$ 205",
       "originalPrice": "\$230",
       "description":
           "The forward-thinking design of this latest signature shoe."
@@ -22,7 +22,7 @@ class _MyListViewState extends State<MyListView> {
     {
       "shoeImage": "lib/images/shoes2.png",
       "shoeName": "Zoey Bennett",
-      "shoePrice": "\$236",
+      "shoePrice": "\$ 236",
       "originalPrice": "\$260",
       "description":
           "The forward-thinking design of this latest signature shoe."
@@ -30,7 +30,7 @@ class _MyListViewState extends State<MyListView> {
     {
       "shoeImage": "lib/images/shoes6.png",
       "shoeName": "Zoey Bennett",
-      "shoePrice": "\$180",
+      "shoePrice": "\$ 180",
       "originalPrice": "\$210",
       "description":
           "The forward-thinking design of this latest signature shoe."
@@ -38,7 +38,7 @@ class _MyListViewState extends State<MyListView> {
     {
       "shoeImage": "lib/images/shoes4.png",
       "shoeName": "Zoey Bennett",
-      "shoePrice": "\$250",
+      "shoePrice": "\$ 250",
       "originalPrice": "\$270",
       "description":
           "The forward-thinking design of this latest signature shoe."
