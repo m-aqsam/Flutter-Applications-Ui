@@ -37,7 +37,7 @@ class _Shop_PageState extends State<Shop_Page> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // ******************** Search Bar ************************
+        // ******************* Search Bar ***********************
 
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
