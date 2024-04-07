@@ -8,10 +8,9 @@ class Add_To_Cart_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
-      body: Center(
-        child: Text("Cart Page"),
-      ),
-    );
+        backgroundColor: Colors.grey[300],
+        body: Column(
+          children: [],
+        ));
   }
 }
