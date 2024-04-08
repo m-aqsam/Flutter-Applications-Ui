@@ -61,7 +61,7 @@ class _Shop_PageState extends State<Shop_Page> {
           ),
         ),
 
-        // *****************  Carousel  Slider **********************
+        // ****************  Carousel  Slider *********************
 
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
