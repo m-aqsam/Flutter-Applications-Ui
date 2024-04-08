@@ -183,7 +183,7 @@ class _MyListViewState extends State<MyListView> {
 
                                 // Row Children
 
-                                // ************** Add to cart Button ***********
+                                // ************ Add to cart Button ***********
 
                                 InkWell(
                                   onTap: () {},
