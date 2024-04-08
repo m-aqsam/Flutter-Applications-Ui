@@ -24,9 +24,26 @@ class Profile_Page extends StatelessWidget {
           ],
         ),
 
+        SizedBox(height: 25),
+
         // Profile Photo
 
+        CircleAvatar(
+          backgroundImage: AssetImage("lib/images/man.jpg"),
+          // backgroundColor: Colors.black,
+          radius: 75,
+        ),
+
+        SizedBox(height: 20),
+
         // User Name
+
+        Text(
+          "Amelia Jacob",
+          style: TextStyle(
+            fontSize: 20,
+          ),
+        )
 
         // Profile Options
 
