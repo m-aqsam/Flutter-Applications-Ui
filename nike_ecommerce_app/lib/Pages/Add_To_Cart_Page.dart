@@ -10,7 +10,9 @@ class Add_To_Cart_Page extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.grey[300],
         body: Column(
-          children: [],
+          children: [
+            //
+          ],
         ));
   }
 }
