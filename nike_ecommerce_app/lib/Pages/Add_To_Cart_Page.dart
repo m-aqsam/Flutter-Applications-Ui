@@ -34,7 +34,7 @@ class Add_To_Cart_Page extends StatelessWidget {
 
             SizedBox(height: 20),
 
-            // Cart Items
+            // Cart Items List
 
             Expanded(
               child: Container(
