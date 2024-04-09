@@ -86,7 +86,10 @@ class _Home_PageState extends State<Home_Page> {
                 children: [
                   InkWell(
                     onTap: () {
-                      // on tap move to the page
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) => Shop_Page()),
+                      // );
                     },
                     child: ListTile(
                       leading: Icon(
@@ -107,7 +110,12 @@ class _Home_PageState extends State<Home_Page> {
 
                   InkWell(
                     onTap: () {
-                      // on tap move to the page
+                      // Profile Page
+
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) => Profile_Page()),
+                      // );
                     },
                     child: ListTile(
                       leading: Icon(
