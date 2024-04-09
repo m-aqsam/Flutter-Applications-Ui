@@ -18,12 +18,10 @@ class _MyCartListState extends State<MyCartList> {
           padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
           child: Container(
             height: 90,
-            // width: 20,
             decoration: BoxDecoration(
               color: Colors.grey[100],
               borderRadius: BorderRadius.circular(12),
             ),
-
             child: Center(
               child: ListTile(
                 leading: Container(
