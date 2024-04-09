@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_nav_bar: ^5.0.6
   carousel_slider: ^4.2.1
+  image_picker: ^1.0.7
   
 
 dev_dependencies:
