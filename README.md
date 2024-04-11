@@ -1,1 +1,1 @@
-Flutter Applicationa Ui.
+Flutter Applications Ui.
