@@ -29,7 +29,7 @@ class _MyCartListState extends State<MyCartList> {
                   child: Image.asset("lib/images/introimage4.png"),
                 ),
 
-                // tittle
+                // tittle ***
 
                 title: Text(
                   "Shoe Name",
