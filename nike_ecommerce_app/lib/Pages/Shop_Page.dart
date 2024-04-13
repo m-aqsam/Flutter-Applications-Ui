@@ -87,7 +87,7 @@ class _Shop_PageState extends State<Shop_Page> {
 
         // SizedBox(height: 0),
 
-        // ******************  Hot Picks / Shoes List  **********************
+        // ******************  Hot Picks / Shoes List  *********************
 
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
