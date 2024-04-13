@@ -42,7 +42,7 @@ class Intro_Page extends StatelessWidget {
 
             SizedBox(height: 10),
 
-            // Just do it
+            // Just do it *
 
             Text(
               "Just Do it ",
