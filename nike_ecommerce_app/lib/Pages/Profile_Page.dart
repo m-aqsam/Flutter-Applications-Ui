@@ -36,7 +36,7 @@ class _Profile_PageState extends State<Profile_Page> {
               onPressed: () async {
                 // Pick an image from the gallery (Still not solve)
 
-                //****   Here Start of Method (But Got some errors) ****
+                //** */   Here Start of Method (But Got some errors) ****
 
                 //
                 // final imagePicker = ImagePicker();
