@@ -214,7 +214,7 @@ class _Home_PageState extends State<Home_Page> {
         ),
       ),
 
-      // ************** Bottom Nav Bar *************
+      // ************ Bottom Nav Bar *************
 
       bottomNavigationBar: MyNavigation_Bar(
         onTabChange: (index) => navigateBottomBar(index),
