@@ -6,7 +6,7 @@ import 'package:nike_ecommerce_app/components/MyCartList.dart';
 class Add_To_Cart_Page extends StatelessWidget {
   const Add_To_Cart_Page({super.key});
 
-  //  ************** Issue ****************
+  //  ************* Issue ****************
 
   //  Want to access the List(_shoeList) in ListView File
   //  to this file and and add items in it
