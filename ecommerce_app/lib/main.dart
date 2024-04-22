@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
 
           // Ecommerce App
 
-          // Start Tommorow .... >
+          // Start Tommorow  >
           ),
     );
   }
