@@ -1,5 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:ecommerce_app/pages/Intro_Page.dart';
+import 'package:ecommerce_app/pages/Shop_Page.dart';
+import 'package:ecommerce_app/theme/Light_Mode.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,11 +16,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-
-          // Start
-
-          ),
+      debugShowCheckedModeBanner: false,
+      home: Intro_Page(),
+      theme: lightMode,
+      routes: {
+        '/Intro_Page': (context) => Intro_Page(),
+        '/Shop_Page': (context) => Shop_Page(),
+      },
     );
   }
 }
