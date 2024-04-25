@@ -17,7 +17,7 @@ class My_Product_Tile extends StatelessWidget {
       child: Container(
         height: 100,
         decoration: BoxDecoration(
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(12),
         ),
         child: Column(
@@ -25,26 +25,97 @@ class My_Product_Tile extends StatelessWidget {
             // Product Image
 
             Container(
+              height: 124,
               width: double.infinity,
+              padding: EdgeInsets.all(20),
+              // margin: EdgeInsets.all(30),
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.secondary,
+                borderRadius: BorderRadius.circular(12),
               ),
-              child: Icon(Icons.favorite),
+              child: Image.asset("lib/images/productimages/product1.png"),
             ),
 
-            // Product Name
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(height: 5),
+                  // Product Name
 
-            Text(product.name),
+                  Text(
+                    product.name,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Theme.of(context).colorScheme.inversePrimary,
+                    ),
+                  ),
 
-            // Product Description
+                  SizedBox(height: 2),
 
-            Text(product.description),
+                  // Product Description
 
-            // Product Price
+                  Text(
+                    product.description,
+                    style: TextStyle(
+                      fontSize: 10,
+                      color: Theme.of(context).colorScheme.onSecondary,
+                    ),
+                  ),
+                ],
+              ),
+            ),
 
-            Text(product.price.toStringAsFixed(2)),
+            SizedBox(height: 8),
 
-            // Add to Cart Button
+            // ********** Price + Add to cart
+
+            Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      // Product Price
+
+                      Text(
+                        "\$ " + product.price.toStringAsFixed(2),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: Theme.of(context).colorScheme.inversePrimary,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      // Add to Cart Button
+
+                      InkWell(
+                        onTap: () {
+                          // On Tap to add to cart
+                        },
+                        child: Container(
+                          padding: EdgeInsets.all(2.9),
+                          decoration: BoxDecoration(
+                              color:
+                                  Theme.of(context).colorScheme.inversePrimary,
+                              borderRadius: BorderRadius.only(
+                                  bottomRight: Radius.circular(12))),
+                          child: Icon(
+                            Icons.add,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
