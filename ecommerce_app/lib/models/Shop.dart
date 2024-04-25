@@ -10,7 +10,7 @@ class Shop extends ChangeNotifier {
     Product(
       name: "Product 1",
       price: 99.99,
-      description: "Item Description",
+      description: "Order now and experience the difference",
       // imagePath: imagePath,
     ),
 
@@ -18,7 +18,7 @@ class Shop extends ChangeNotifier {
     Product(
       name: "Product 2",
       price: 99.99,
-      description: "Item Description",
+      description: "Order now and experience the difference",
       // imagePath: imagePath,
     ),
 
@@ -26,7 +26,7 @@ class Shop extends ChangeNotifier {
     Product(
       name: "Product 3",
       price: 99.99,
-      description: "Item Description",
+      description: "Order now and experience the difference",
       // imagePath: imagePath,
     ),
 
@@ -34,35 +34,35 @@ class Shop extends ChangeNotifier {
     Product(
       name: "Product 4",
       price: 99.99,
-      description: "Item Description",
+      description: "Order now and experience the difference",
       // imagePath: imagePath,
     ),
     // Product 5
     Product(
       name: "Product 5",
       price: 99.99,
-      description: "Item Description",
+      description: "Order now and experience the difference",
       // imagePath: imagePath,
     ),
     // Product 6
     Product(
       name: "Product 6",
       price: 99.99,
-      description: "Item Description",
+      description: "Order now and experience the difference",
       // imagePath: imagePath,
     ),
     // Product 7
     Product(
       name: "Product 7",
       price: 99.99,
-      description: "Item Description",
+      description: "Order now and experience the difference",
       // imagePath: imagePath,
     ),
     // Product 8
     Product(
       name: "Product 8",
       price: 99.99,
-      description: "Item Description",
+      description: "Order now and experience the difference",
       // imagePath: imagePath,
     ),
   ];
