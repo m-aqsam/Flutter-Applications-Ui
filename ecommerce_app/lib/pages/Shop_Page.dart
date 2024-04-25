@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:ecommerce_app/components/Featued_Product_Tile.dart';
 import 'package:ecommerce_app/components/My_Product_Tile.dart';
 import 'package:ecommerce_app/components/Search_Bar.dart';
 import 'package:ecommerce_app/models/Product.dart';
@@ -90,6 +91,29 @@ class Shop_Page extends StatelessWidget {
           // **************** Search Bar
 
           Search_Bar(),
+
+          SizedBox(height: 10),
+
+          // Featured Products
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: Container(
+              height: 135,
+              // color: Colors.amber,
+              child: ListView.builder(
+                itemCount: products.length,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  // get each individual product from shop
+                  final product = products[index];
+
+                  // return as a product tile in ui
+                  return Featured_Product_Tile(product: product);
+                },
+              ),
+            ),
+          ),
 
           // ************** Product List
 
