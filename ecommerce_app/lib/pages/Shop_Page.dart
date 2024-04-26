@@ -50,7 +50,7 @@ class Shop_Page extends StatelessWidget {
   Widget build(BuildContext context) {
     final products = context.watch<Shop>().shop;
     return Scaffold(
-      // *****************  Scaffold *******************
+      // ****************  Scaffold *******************
 
       body: Column(
         children: [
