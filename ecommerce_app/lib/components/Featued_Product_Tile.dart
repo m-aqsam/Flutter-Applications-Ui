@@ -59,7 +59,7 @@ class Featured_Product_Tile extends StatelessWidget {
                     ],
                   ),
 
-                  // Button
+                  // Like  Button
 
                   Container(
                     child: Icon(Icons.favorite_border_outlined),
