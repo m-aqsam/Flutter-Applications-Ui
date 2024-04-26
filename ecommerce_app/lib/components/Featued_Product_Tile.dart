@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:ecommerce_app/models/Product.dart';
 import 'package:flutter/material.dart';
 
@@ -60,7 +62,6 @@ class Featured_Product_Tile extends StatelessWidget {
                   // Button
 
                   Container(
-                    // color: Colors.amber,
                     child: Icon(Icons.favorite_border_outlined),
                   )
                 ],
