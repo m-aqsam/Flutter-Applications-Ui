@@ -26,6 +26,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Intro_Page(),
       theme: lightMode,
+
+      // Routes
       routes: {
         '/Intro_Page': (context) => Intro_Page(),
         '/Shop_Page': (context) => Shop_Page(),
