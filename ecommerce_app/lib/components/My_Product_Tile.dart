@@ -27,13 +27,15 @@ class My_Product_Tile extends StatelessWidget {
             Container(
               height: 124,
               width: double.infinity,
-              padding: EdgeInsets.all(20),
-              // margin: EdgeInsets.all(30),
+              //padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.secondary,
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: Image.asset("lib/images/productimages/product1.png"),
+              child: Image.asset(
+                product.imagePath,
+                fit: BoxFit.cover,
+              ),
             ),
 
             Padding(
