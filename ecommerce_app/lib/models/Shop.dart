@@ -8,62 +8,62 @@ class Shop extends ChangeNotifier {
   final List<Product> _shop = [
     // Product 1
     Product(
-      name: "Product 1",
+      name: "Nike Shoes",
       price: 99.99,
       description: "Order now and experience the difference",
-      // imagePath: imagePath,
+      imagePath: "lib/images/productimages/product2.jpg",
     ),
 
     // Product 2
     Product(
-      name: "Product 2",
-      price: 99.99,
+      name: "Block Heels",
+      price: 78.5,
       description: "Order now and experience the difference",
-      // imagePath: imagePath,
+      imagePath: "lib/images/productimages/product3.jpg",
     ),
 
     // Product 3
     Product(
-      name: "Product 3",
-      price: 99.99,
+      name: "School Bag",
+      price: 49.9,
       description: "Order now and experience the difference",
-      // imagePath: imagePath,
+      imagePath: "lib/images/productimages/product9.jpg",
     ),
 
     // Product 4
     Product(
-      name: "Product 4",
-      price: 99.99,
+      name: "Iphone Case",
+      price: 19.9,
       description: "Order now and experience the difference",
-      // imagePath: imagePath,
+      imagePath: "lib/images/productimages/product4.jpg",
     ),
     // Product 5
     Product(
-      name: "Product 5",
-      price: 99.99,
+      name: "Black Glasses",
+      price: 69.9,
       description: "Order now and experience the difference",
-      // imagePath: imagePath,
+      imagePath: "lib/images/productimages/product5.jpg",
     ),
     // Product 6
     Product(
-      name: "Product 6",
-      price: 99.99,
+      name: "K9 Headsets",
+      price: 29.9,
       description: "Order now and experience the difference",
-      // imagePath: imagePath,
+      imagePath: "lib/images/productimages/product6.jpg",
     ),
     // Product 7
     Product(
-      name: "Product 7",
-      price: 99.99,
+      name: "Black t-shirt",
+      price: 24.5,
       description: "Order now and experience the difference",
-      // imagePath: imagePath,
+      imagePath: "lib/images/productimages/product7.jpg",
     ),
     // Product 8
     Product(
-      name: "Product 8",
-      price: 99.99,
+      name: "Men's Watch",
+      price: 89.9,
       description: "Order now and experience the difference",
-      // imagePath: imagePath,
+      imagePath: "lib/images/productimages/product8.jpg",
     ),
   ];
 
