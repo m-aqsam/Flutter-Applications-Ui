@@ -4,6 +4,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ecommerce_app/components/Featued_Product_Tile.dart';
 import 'package:ecommerce_app/components/My_Product_Tile.dart';
 import 'package:ecommerce_app/components/Search_Bar.dart';
+import 'package:ecommerce_app/models/Feature_List.dart';
 import 'package:ecommerce_app/models/Product.dart';
 import 'package:ecommerce_app/models/Shop.dart';
 import 'package:flutter/material.dart';
@@ -49,6 +50,7 @@ class Shop_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final products = context.watch<Shop>().shop;
+    final featureProduct = context.watch<FeaturedList>().items;
     return Scaffold(
       // ****************  Scaffold *******************
 
@@ -102,14 +104,14 @@ class Shop_Page extends StatelessWidget {
               height: 135,
               // color: Colors.amber,
               child: ListView.builder(
-                itemCount: products.length,
+                itemCount: featureProduct.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   // get each individual product from shop
-                  final product = products[index];
+                  final product = featureProduct[index];
 
                   // return as a product tile in ui
-                  return Featured_Product_Tile(product: product);
+                  return Featured_Product_Tile(featuredProduct: product);
                 },
               ),
             ),
