@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:ecommerce_app/models/Feature_List.dart';
 import 'package:ecommerce_app/models/Shop.dart';
 import 'package:ecommerce_app/pages/Intro_Page.dart';
 import 'package:ecommerce_app/pages/Shop_Page.dart';
@@ -9,8 +10,12 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => Shop(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => Shop()),
+        ChangeNotifierProvider(
+            create: (context) => FeaturedList()), // Add this line
+      ],
       child: MyApp(),
     ),
   );
