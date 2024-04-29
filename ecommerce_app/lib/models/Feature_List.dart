@@ -40,6 +40,8 @@ class FeaturedList extends ChangeNotifier {
       price: 99.9,
       imagePath: "lib/images/featuredproducts/product5.jpg",
     ),
+
+    // Product 5
   ];
 
   // User Liked Items List
