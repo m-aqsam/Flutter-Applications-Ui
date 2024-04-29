@@ -65,7 +65,7 @@ class Featured_Product_Tile extends StatelessWidget {
                         ),
                       ),
 
-                      // Add to Cart Button
+                      // ** Add to Cart Button
                     ],
                   ),
 
