@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class Shop extends ChangeNotifier {
-  // ** Product for Sale
+  //  Product for Sale
 
   final List<Product> _shop = [
     // Product 1
