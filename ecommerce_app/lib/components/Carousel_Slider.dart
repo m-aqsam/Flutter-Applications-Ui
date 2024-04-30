@@ -7,7 +7,7 @@ class Carusel_Slider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
 
-        // Carousel Code
+        // Pate the carousel Code from main shop file
         );
   }
 }
