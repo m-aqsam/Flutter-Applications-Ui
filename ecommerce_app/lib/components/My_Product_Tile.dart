@@ -22,7 +22,7 @@ class My_Product_Tile extends StatelessWidget {
         ),
         child: Column(
           children: [
-            // ** Product Image
+            //  Product Image
 
             Container(
               height: 124,
