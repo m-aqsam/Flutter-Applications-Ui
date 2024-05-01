@@ -41,7 +41,7 @@ class FeaturedList extends ChangeNotifier {
       imagePath: "lib/images/featuredproducts/product5.jpg",
     ),
 
-    // Product 5
+    // Product 6
   ];
 
   // User Liked Items List
