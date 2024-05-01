@@ -15,6 +15,8 @@ class Intro_Page extends StatelessWidget {
           children: [
             // top Elements
 
+            // Tomorrow complete the intro page with flutter splash screens
+
             // Button
 
             InkWell(
