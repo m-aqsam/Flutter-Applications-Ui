@@ -15,7 +15,7 @@ class Intro_Page extends StatelessWidget {
           children: [
             // Top Elements
 
-            // Tomorrow complete the intro page with flutter splash screens
+            // Tomorrow complete the intro page with flutter splash screens..
 
             // Button
 
