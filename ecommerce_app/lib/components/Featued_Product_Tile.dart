@@ -24,7 +24,7 @@ class Featured_Product_Tile extends StatelessWidget {
         ),
         child: Column(
           children: [
-            // **  Product Image
+            //  Product Image
 
             Container(
               // padding: EdgeInsets.all(10),
