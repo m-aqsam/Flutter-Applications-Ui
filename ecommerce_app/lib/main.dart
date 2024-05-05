@@ -14,7 +14,7 @@ void main() {
       providers: [
         ChangeNotifierProvider(create: (context) => Shop()),
         ChangeNotifierProvider(
-            create: (context) => FeaturedList()), // Add this line
+            create: (context) => FeaturedList()), // Add this line ..
       ],
       child: MyApp(),
     ),
