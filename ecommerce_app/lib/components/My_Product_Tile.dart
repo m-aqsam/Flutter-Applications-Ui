@@ -10,6 +10,39 @@ class My_Product_Tile extends StatelessWidget {
     required this.product,
   });
 
+  // add to Cart Button Pressed
+
+  void addToCart(BuildContext context) {
+    // Show Dialog for confirmation
+
+    showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+              content: Text("Add This item to your cart?"),
+              actions: [
+                // Cancel Button
+
+                MaterialButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text("Cancel"),
+                ),
+
+                // Yes Button
+
+                MaterialButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+
+                    // add item to cart
+                  },
+                  child: Text("Yes"),
+                ),
+              ],
+            ));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -74,47 +107,37 @@ class My_Product_Tile extends StatelessWidget {
             // ******** Price + Add to cart
 
             Padding(
-              padding: const EdgeInsets.only(left: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 8),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
-                    children: [
-                      // Product Price
+                  // Product Price
 
-                      Text(
-                        "\$ " + product.price.toStringAsFixed(2),
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                          color: Theme.of(context).colorScheme.inversePrimary,
-                        ),
-                      ),
-                    ],
+                  Text(
+                    "\$ " + product.price.toStringAsFixed(2),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: Theme.of(context).colorScheme.inversePrimary,
+                    ),
                   ),
-                  Column(
-                    children: [
-                      // Add to Cart Button
+                  // Cart Button
 
-                      InkWell(
-                        onTap: () {
-                          // On Tap to add to cart
-                        },
-                        child: Container(
-                          padding: EdgeInsets.all(2.9),
-                          decoration: BoxDecoration(
-                              color:
-                                  Theme.of(context).colorScheme.inversePrimary,
-                              borderRadius: BorderRadius.only(
-                                  bottomRight: Radius.circular(12))),
-                          child: Icon(
-                            Icons.add,
-                            color: Theme.of(context).colorScheme.primary,
-                          ),
-                        ),
+                  InkWell(
+                    onTap: () => addToCart(context),
+                    child: Container(
+                      // height: 18,
+                      // padding: EdgeInsets.all(2.9),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.inversePrimary,
+                        borderRadius: BorderRadius.circular(4),
                       ),
-                    ],
-                  )
+                      child: Icon(
+                        Icons.add,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             )
