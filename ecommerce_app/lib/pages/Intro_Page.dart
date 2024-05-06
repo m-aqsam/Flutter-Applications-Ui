@@ -21,7 +21,7 @@ class Intro_Page extends StatelessWidget {
 
             InkWell(
               onTap: () {
-                Navigator.popAndPushNamed(context, '/Shop_Page');
+                Navigator.popAndPushNamed(context, '/Home_Page');
               },
               child: Container(
                   height: 55,
