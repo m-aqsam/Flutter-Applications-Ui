@@ -65,6 +65,7 @@ class Shop extends ChangeNotifier {
       description: "Order now and experience the difference",
       imagePath: "lib/images/productimages/product8.jpg",
     ),
+    // Product 9
   ];
 
   // user Cart
