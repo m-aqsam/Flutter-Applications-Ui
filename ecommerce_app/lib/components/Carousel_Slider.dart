@@ -34,7 +34,6 @@ class Carusel_Slider extends StatelessWidget {
     "image10": "lib/images/carouselimage10.png",
     "image11": "lib/images/carouselimage11.png",
     "image12": "lib/images/carouselimage12.png",
-    // Add more image paths as needed
   };
 
   @override
