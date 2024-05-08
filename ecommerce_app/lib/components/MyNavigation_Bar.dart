@@ -13,33 +13,38 @@ class MyNavigation_Bar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 12),
-      child: Container(
-        // G Nav Package
-        child: GNav(
-          color: Colors.grey[400],
-          activeColor: Colors.grey[800],
-          tabActiveBorder: Border.all(color: Colors.white),
-          tabBorder: Border.all(color: Colors.grey.shade100),
-          tabBackgroundColor: Colors.grey.shade100,
-          tabBorderRadius: 16,
-          mainAxisAlignment: MainAxisAlignment.center,
-          onTabChange: (value) => onTabChange!(value),
-          tabs: [
-            GButton(
-              icon: Icons.home,
-              text: " Home",
-            ),
-            GButton(
-              icon: Icons.add_shopping_cart_rounded,
-              text: " Cart",
-            ),
-            GButton(
-              icon: Icons.person,
-              text: " Profile",
-            ),
-          ],
-        ),
+      padding: const EdgeInsets.only(bottom: 6, top: 6),
+      child: GNav(
+        // backgroundColor: Theme.of(context).colorScheme.primary,
+        //backgroundColor: Colors.transparent,
+        color: Colors.grey[500],
+        activeColor: Colors.grey[100],
+        tabActiveBorder: Border.all(color: Colors.white),
+        tabBorder: Border.all(color: Colors.grey.shade500),
+        tabBackgroundColor: Colors.grey.shade900,
+        tabBorderRadius: 16,
+
+        mainAxisAlignment: MainAxisAlignment.center,
+        onTabChange: (value) => onTabChange!(value),
+        iconSize: 18,
+        tabs: [
+          GButton(
+            icon: Icons.home,
+            text: " Home",
+          ),
+          GButton(
+            icon: Icons.add_shopping_cart_rounded,
+            text: " Cart",
+          ),
+          GButton(
+            icon: Icons.category_rounded,
+            text: " Explore",
+          ),
+          GButton(
+            icon: Icons.person,
+            text: " Profile",
+          ),
+        ],
       ),
     );
   }
