@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:ecommerce_app/models/Product.dart';
+import 'package:ecommerce_app/models/Shop.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class My_Product_Tile extends StatelessWidget {
   final Product product;
@@ -36,6 +38,7 @@ class My_Product_Tile extends StatelessWidget {
                     Navigator.pop(context);
 
                     // add item to cart
+                    context.read<Shop>().addToCart(product);
                   },
                   child: Text("Yes"),
                 ),
