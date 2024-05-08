@@ -1,7 +1,8 @@
-// ignore_for_file: prefer_final_fields
+// ignore_for_file: prefer_final_fields, prefer_const_constructors
 
 import 'package:ecommerce_app/components/MyNavigation_Bar.dart';
 import 'package:ecommerce_app/pages/Cart_Page.dart';
+import 'package:ecommerce_app/pages/Featured_Products_Page.dart';
 import 'package:ecommerce_app/pages/Profile_Page.dart';
 import 'package:ecommerce_app/pages/Shop_Page.dart';
 import 'package:flutter/material.dart';
@@ -29,6 +30,7 @@ class _Home_PageState extends State<Home_Page> {
   List<Widget> _pages = [
     Shop_Page(),
     Cart_Page(),
+    Featured_Product_Page(),
     Profile_Page(),
   ];
 
