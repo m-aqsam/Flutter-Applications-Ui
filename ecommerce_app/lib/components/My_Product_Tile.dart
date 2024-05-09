@@ -7,47 +7,51 @@ import 'package:provider/provider.dart';
 
 class My_Product_Tile extends StatelessWidget {
   final Product product;
-  const My_Product_Tile({
+  My_Product_Tile({
     super.key,
     required this.product,
   });
 
   // add to Cart Button Pressed
 
-  void addToCart(BuildContext context) {
+  void addToCart(BuildContext context, cart) {
     // Show Dialog for confirmation
 
     showDialog(
-        context: context,
-        builder: (context) => AlertDialog(
-              content: Text("Add This item to your cart?"),
-              actions: [
-                // Cancel Button
+      context: context,
+      builder: (context) => AlertDialog(
+        content: Text("Add This item to your cart?"),
+        actions: [
+          // Cancel Button
 
-                MaterialButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  child: Text("Cancel"),
-                ),
+          MaterialButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: Text("Cancel"),
+          ),
 
-                // Yes Button
+          // Yes Button
 
-                MaterialButton(
-                  onPressed: () {
-                    Navigator.pop(context);
+          MaterialButton(
+            onPressed: () {
+              Navigator.pop(context);
 
-                    // add item to cart
-                    context.read<Shop>().addToCart(product);
-                  },
-                  child: Text("Yes"),
-                ),
-              ],
-            ));
+              // add item to cart
+              context.read<Shop>().addToCart(product);
+            },
+            child: Text("Yes"),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
+    // Get Access to the cart
+    final cart = context.watch<Shop>().cart;
+
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
@@ -127,7 +131,7 @@ class My_Product_Tile extends StatelessWidget {
                   // Cart Button
 
                   InkWell(
-                    onTap: () => addToCart(context),
+                    onTap: () => addToCart(context, cart),
                     child: Container(
                       // height: 18,
                       // padding: EdgeInsets.all(2.9),
