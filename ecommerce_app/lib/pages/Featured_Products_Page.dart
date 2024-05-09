@@ -12,7 +12,7 @@ class Featured_Product_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final products = context.watch<Shop>().shop;
-    final featureProduct = context.watch<FeaturedList>().items;
+
     return Scaffold(
       // App Bar
       appBar: AppBar(
