@@ -2,7 +2,9 @@
 
 import 'package:ecommerce_app/components/MyProfileList.dart';
 import 'package:ecommerce_app/components/ProfileOption.dart';
+import 'package:ecommerce_app/models/Shop.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class Profile_Page extends StatefulWidget {
   const Profile_Page({super.key});
@@ -66,6 +68,8 @@ class _Profile_PageState extends State<Profile_Page> {
   // ******************** Scaffold *********************
   @override
   Widget build(BuildContext context) {
+    // Get Access to the cart
+    final cart = context.watch<Shop>().cart;
     return Scaffold(
       // App BAr
 
@@ -108,7 +112,7 @@ class _Profile_PageState extends State<Profile_Page> {
                       CircleAvatar(
                         backgroundImage: AssetImage(
                             "lib/images/profileimages/profileimage1.jpg"),
-                        radius: 35,
+                        radius: 40,
                       ),
 
                       SizedBox(width: 18),
@@ -126,6 +130,8 @@ class _Profile_PageState extends State<Profile_Page> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
+
+                          SizedBox(height: 2),
                           // Get Club Membership
 
                           Container(
@@ -139,7 +145,7 @@ class _Profile_PageState extends State<Profile_Page> {
                               "Get Our Club Membership >",
                               style: TextStyle(
                                 fontSize: 12,
-                                color: Colors.white,
+                                color: Theme.of(context).colorScheme.onPrimary,
                               ),
                             ),
                           ),
@@ -148,21 +154,71 @@ class _Profile_PageState extends State<Profile_Page> {
                     ],
                   ),
 
+                  SizedBox(height: 25),
+
                   // Followers / Stats
 
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
+                      // ********** Cart Items
                       Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.amber,
+                        child: Column(
+                          children: [
+                            // Followers
+
+                            Text(
+                              cart.length.toString(),
+                              style: TextStyle(
+                                fontSize: 18,
+                              ),
+                            ),
+
+                            // Text
+
+                            Text("Cart Items")
+                          ],
+                        ),
                       ),
-                      SizedBox(width: 50),
+                      // SizedBox(width: 50),
+
+                      // ********** My WhishList
                       Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.amber,
+                        child: Column(
+                          children: [
+                            // Followers
+
+                            Text(
+                              '0',
+                              style: TextStyle(
+                                fontSize: 18,
+                              ),
+                            ),
+
+                            // Text
+
+                            Text("My Wishlist")
+                          ],
+                        ),
+                      ),
+                      // ********** Store Followed
+                      Container(
+                        child: Column(
+                          children: [
+                            // Followers
+
+                            Text(
+                              '0',
+                              style: TextStyle(
+                                fontSize: 18,
+                              ),
+                            ),
+
+                            // Text
+
+                            Text("Store Followed")
+                          ],
+                        ),
                       ),
                     ],
                   )
