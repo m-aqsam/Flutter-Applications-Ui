@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Intro_Page extends StatelessWidget {
   const Intro_Page({super.key});
@@ -11,13 +12,27 @@ class Intro_Page extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.background,
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Top Elements
+            // Icon
 
-            // Tomorrow complete the intro page with flutter splash screens..
+            Icon(
+              Icons.shopping_bag_rounded,
+              size: 120,
+            ),
+
+            Text(
+              "Trend Shop",
+              style: GoogleFonts.prostoOne(
+                  textStyle: TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+              )),
+            ),
 
             // Button
+
+            /* 
 
             InkWell(
               onTap: () {
@@ -56,6 +71,8 @@ class Intro_Page extends StatelessWidget {
                     ],
                   )),
             ),
+
+            */
 
             SizedBox(height: 70)
           ],
