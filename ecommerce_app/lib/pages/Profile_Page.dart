@@ -91,7 +91,7 @@ class _Profile_PageState extends State<Profile_Page> {
 
       body: Column(
         children: [
-          // **************** Header Container *********************
+          // *************** Header Container ********************
 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12),
