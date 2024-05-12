@@ -16,7 +16,6 @@ class MyProfileList extends StatelessWidget {
         children: [
           // Icon
 
-          //lib\images\profileimages
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             child: Container(
