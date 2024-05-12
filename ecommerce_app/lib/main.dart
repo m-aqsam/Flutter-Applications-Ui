@@ -16,8 +16,7 @@ void main() {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => Shop()),
-        ChangeNotifierProvider(
-            create: (context) => FeaturedList()),
+        ChangeNotifierProvider(create: (context) => FeaturedList()),
       ],
       child: MyApp(),
     ),
