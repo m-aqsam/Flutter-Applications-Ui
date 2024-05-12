@@ -21,60 +21,55 @@ class Intro_Page extends StatelessWidget {
               size: 120,
             ),
 
+            // App Name
+
             Text(
               "Trend Shop",
-              style: GoogleFonts.prostoOne(
+              style: GoogleFonts.poppins(
                   textStyle: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
               )),
             ),
 
-            // Button
+            // Description
 
-            /* 
+            Text(
+              "Premium quality products",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+
+            SizedBox(height: 12),
+
+            // Button
 
             InkWell(
               onTap: () {
                 Navigator.popAndPushNamed(context, '/Home_Page');
               },
               child: Container(
-                  height: 55,
-                  width: 300,
-                  // padding: EdgeInsets.all(20),
+                  // height: 55,
+                  width: 100,
+                  padding: EdgeInsets.all(6),
                   decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.inversePrimary,
-                    borderRadius: BorderRadius.circular(30),
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: BorderRadius.circular(6),
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      // Text
-
-                      Text(
-                        "Discover",
-                        style: TextStyle(
-                          color: Theme.of(context).colorScheme.primary,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-
-                      SizedBox(width: 20),
-
                       // Icon
 
                       Icon(
                         Icons.navigate_next_rounded,
-                        color: Theme.of(context).colorScheme.primary,
+                        color: Theme.of(context).colorScheme.onSecondary,
+                        size: 50,
                       )
                     ],
                   )),
             ),
-
-            */
-
-            SizedBox(height: 70)
           ],
         ),
       ),
