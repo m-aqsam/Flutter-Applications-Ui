@@ -32,7 +32,7 @@ class Shop_Page extends StatelessWidget {
 
           SizedBox(height: 10),
 
-          // ************* Search Bar
+          // *************** Search Bar
 
           Search_Bar(),
 
