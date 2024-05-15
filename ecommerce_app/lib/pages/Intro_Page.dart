@@ -50,7 +50,6 @@ class Intro_Page extends StatelessWidget {
                 Navigator.popAndPushNamed(context, '/Home_Page');
               },
               child: Container(
-                  // height: 55,
                   width: 100,
                   padding: EdgeInsets.all(6),
                   decoration: BoxDecoration(
