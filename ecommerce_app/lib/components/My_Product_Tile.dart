@@ -111,7 +111,7 @@ class My_Product_Tile extends StatelessWidget {
 
             SizedBox(height: 8),
 
-            // ******** Price + Add to cart
+            // ******8*** Price + Add to cart
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8),
