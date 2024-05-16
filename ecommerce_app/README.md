@@ -2,7 +2,8 @@
 
 A new ecommerce-app with light and dar mode and state management.
 
-![87shots_so](https://github.com/m-aqsam/Flutter-Applications-Ui/assets/121599719/2703571a-494d-4989-9b48-b8b41efd43d3)
+
+![203shots_so](https://github.com/m-aqsam/Flutter-Applications-Ui/assets/121599719/571e452e-9fe8-41cd-b77a-0b33fd5307fc)
 
 
 
