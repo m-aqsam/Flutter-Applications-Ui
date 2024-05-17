@@ -1,6 +1,15 @@
 # ecommerce_app
 
-A new Flutter project.
+A new ecommerce-app with light and dar mode and state management.
+
+
+![203shots_so](https://github.com/m-aqsam/Flutter-Applications-Ui/assets/121599719/571e452e-9fe8-41cd-b77a-0b33fd5307fc)
+
+
+
+
+https://github.com/m-aqsam/Flutter-Applications-Ui/assets/121599719/4d74b130-3f73-4369-bde5-d221ffc33df4
+
 
 ## Getting Started
 
