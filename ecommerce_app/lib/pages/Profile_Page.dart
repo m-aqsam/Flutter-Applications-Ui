@@ -189,7 +189,7 @@ class _Profile_PageState extends State<Profile_Page> {
                             // Followers
 
                             Text(
-                              '0',
+                              '1',
                               style: TextStyle(
                                 fontSize: 18,
                               ),
