@@ -18,7 +18,7 @@ void main() {
         ChangeNotifierProvider(create: (context) => Shop()),
         ChangeNotifierProvider(create: (context) => FeaturedList()),
       ],
-      child: MyApp(),
+      child: MyApp(),        
     ),
   );
 }
