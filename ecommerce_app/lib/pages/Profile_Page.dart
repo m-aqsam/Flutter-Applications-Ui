@@ -182,7 +182,7 @@ class _Profile_PageState extends State<Profile_Page> {
                       ),
                       // SizedBox(width: 50),
 
-                      // ********** My WhishList
+                      // ************ My WhishList
                       Container(
                         child: Column(
                           children: [
