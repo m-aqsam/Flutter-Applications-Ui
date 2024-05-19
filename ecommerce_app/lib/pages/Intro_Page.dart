@@ -43,7 +43,7 @@ class Intro_Page extends StatelessWidget {
 
             SizedBox(height: 12),
 
-            // Button
+            // *** Button
 
             InkWell(
               onTap: () {
