@@ -59,7 +59,7 @@ class Shop_Page extends StatelessWidget {
             ),
           ),
 
-          // **************** Product List ******************
+          // ***************** Product List ******************
 
           Expanded(
             child: GridView.builder(
