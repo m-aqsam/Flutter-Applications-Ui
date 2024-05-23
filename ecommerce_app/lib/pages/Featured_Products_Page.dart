@@ -36,8 +36,6 @@ class Featured_Product_Page extends StatelessWidget {
                 MediaQuery.of(context).orientation == Orientation.portrait
                     ? 2
                     : 1, // Set crossAxisCount based on orientation
-            //crossAxisSpacing: 10,
-            //mainAxisSpacing: 10,
             childAspectRatio: 0.8,
           ),
           itemCount: products.length,
