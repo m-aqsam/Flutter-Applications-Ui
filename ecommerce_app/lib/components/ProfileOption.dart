@@ -27,7 +27,7 @@ class ProfileOption extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              // *** Name
+              //  Name
 
               Text(
                 optionName,
