@@ -51,7 +51,7 @@ class My_Button extends StatelessWidget {
 
         SizedBox(height: 10),
 
-        // text
+        // Text
         Text(
           button_text,
           style: TextStyle(
