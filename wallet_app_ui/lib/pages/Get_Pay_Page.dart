@@ -71,7 +71,7 @@ class _Get_Pay_PageState extends State<Get_Pay_Page> {
     );
   }
 
-  // ************************* Scaffold **********************************
+  // ************************* Scaffold *********************************
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +82,7 @@ class _Get_Pay_PageState extends State<Get_Pay_Page> {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.center,
-            //crossAxisAlignment: CrossAxisAlignment.center,
+            // crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(height: 10),
               // Back Icons
@@ -124,7 +124,7 @@ class _Get_Pay_PageState extends State<Get_Pay_Page> {
 
               SizedBox(height: 10),
 
-              // limit text
+              // Limit text
 
               Row(
                 children: [
