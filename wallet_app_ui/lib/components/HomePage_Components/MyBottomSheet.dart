@@ -29,7 +29,7 @@ class MyBottomSheet extends StatelessWidget {
           ),
 
           SizedBox(height: 20),
-          // Scan Qr Code Text
+          // Scan QR Code Text
 
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
