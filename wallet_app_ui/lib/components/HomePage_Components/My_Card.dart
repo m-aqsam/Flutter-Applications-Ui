@@ -66,7 +66,7 @@ class My_Card extends StatelessWidget {
 
             SizedBox(height: 2),
 
-            // Balanace in numbers
+            // Balance in numbers
             Text(
               "\$" + balance.toString(),
               style: TextStyle(
