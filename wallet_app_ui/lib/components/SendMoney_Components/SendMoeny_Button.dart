@@ -50,7 +50,7 @@ class SendMoney_Button extends StatelessWidget {
 
           SizedBox(height: 20),
 
-          // text
+          // Text
 
           Column(
             children: [
