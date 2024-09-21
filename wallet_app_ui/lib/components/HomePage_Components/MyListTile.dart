@@ -41,7 +41,7 @@ class MyListTile extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            // icon
+            // Icon
 
             Row(
               children: [
