@@ -70,7 +70,7 @@ class _Bill_Payment_PageState extends State<Bill_Payment_Page> {
 
           SizedBox(height: 10),
 
-          // Enter a New Bill Container
+          // Enter a New Bill Container.
 
           Enter_Bill_Container(),
 
