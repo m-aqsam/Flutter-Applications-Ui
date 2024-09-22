@@ -110,7 +110,7 @@ class _Home_PageState extends State<Home_Page> {
 
               // cards
 
-              Container(
+              SizedBox(
                 height: 245,
                 child: PageView(
                   controller: _controller,
@@ -189,7 +189,7 @@ class _Home_PageState extends State<Home_Page> {
                 ),
               ),
 
-              SizedBox(height: 25),
+              SizedBox(height: 8),
 
               // Column -> Stats , Transaction
 
