@@ -45,7 +45,7 @@ class _Get_Pay_PageState extends State<Get_Pay_Page> {
       ),
     );
   }
-  // IBAN number copy
+  // Iban number copy
 
   void IBAN_Copy_Clipboard() {
     final value = ClipboardData(text: "PK41 Wallet 0000 0031 8635 6456");
