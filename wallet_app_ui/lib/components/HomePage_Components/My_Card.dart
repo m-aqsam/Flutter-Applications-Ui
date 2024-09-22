@@ -68,7 +68,7 @@ class My_Card extends StatelessWidget {
 
             // Balance in numbers
             Text(
-              "\$" + balance.toString(),
+              "\$$balance",
               style: TextStyle(
                 fontSize: 34,
                 fontWeight: FontWeight.bold,
@@ -91,7 +91,7 @@ class My_Card extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  expiryDateMonth + "/" + expiryDateYear,
+                  "$expiryDateMonth/$expiryDateYear",
                   style: TextStyle(
                     fontSize: 18,
                     color: Colors.white,
