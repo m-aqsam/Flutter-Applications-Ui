@@ -24,6 +24,8 @@ class _Home_PageState extends State<Home_Page> {
 
   final _controller = PageController();
 
+  // Send on Tap
+
   void send_ontap() {
     Navigator.push(
       context,
