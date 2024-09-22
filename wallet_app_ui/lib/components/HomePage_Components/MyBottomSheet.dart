@@ -89,7 +89,7 @@ class MyBottomSheet extends StatelessWidget {
             child: Image.asset("lib/icons/qr-code.png"),
           ),
 
-          SizedBox(height: 35),
+          SizedBox(height: 25),
 
           // Scan QrCode Button
 
