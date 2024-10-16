@@ -30,6 +30,15 @@ This Repo is the collection of flutter functional applications are design and de
 
 ![709shots_so](https://github.com/user-attachments/assets/fe45033c-e8cc-4a33-a99a-0011f9fed8c1)
 
+# 7 : TikTok App Ui 📱
+
+![571shots_so](https://github.com/user-attachments/assets/a02fdda3-0ede-4078-98fb-9532b0cc8dff)
+
+# 7 : Wallet App Ui 📱
+
+![571shots_so](https://github.com/user-attachments/assets/a02fdda3-0ede-4078-98fb-9532b0cc8dff)
+
+
 
 
 
