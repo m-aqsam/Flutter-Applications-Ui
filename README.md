@@ -25,7 +25,6 @@ This Repo is the collection of flutter applications ui are design and develop by
 # 5 : Nike Ecommerce App 📱
 
 
-
 # 6 : OnBoarding Screens 📱
 
 ![709shots_so](https://github.com/user-attachments/assets/fe45033c-e8cc-4a33-a99a-0011f9fed8c1)
@@ -37,8 +36,6 @@ This Repo is the collection of flutter applications ui are design and develop by
 # 7 : Wallet App Ui 📱
 
 ![294shots_so](https://github.com/user-attachments/assets/0eebb63b-9f6b-430c-9e71-b033a1f80ec1)
-
-
 
 
 
