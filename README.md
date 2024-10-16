@@ -36,7 +36,7 @@ This Repo is the collection of flutter functional applications are design and de
 
 # 7 : Wallet App Ui 📱
 
-![571shots_so](https://github.com/user-attachments/assets/a02fdda3-0ede-4078-98fb-9532b0cc8dff)
+![294shots_so](https://github.com/user-attachments/assets/0eebb63b-9f6b-430c-9e71-b033a1f80ec1)
 
 
 
