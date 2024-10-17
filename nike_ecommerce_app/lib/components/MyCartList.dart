@@ -53,7 +53,7 @@ class _MyCartListState extends State<MyCartList> {
           ),
         );
       },
-      itemCount: 5,
+      itemCount: 1,
     );
   }
 }
