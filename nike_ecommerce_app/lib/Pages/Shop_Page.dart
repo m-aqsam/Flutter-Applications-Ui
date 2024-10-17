@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:nike_ecommerce_app/components/MyListView.dart';
 
 class Shop_Page extends StatefulWidget {
-  Shop_Page({super.key});
+  const Shop_Page({super.key});
 
   @override
   State<Shop_Page> createState() => _Shop_PageState();
@@ -91,7 +91,7 @@ class _Shop_PageState extends State<Shop_Page> {
 
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: Container(
+          child: SizedBox(
             height: 460,
             child: Center(
               child: MyListView(),
