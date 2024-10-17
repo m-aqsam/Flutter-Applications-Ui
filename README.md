@@ -1,4 +1,3 @@
-![95_3x_shots_so](https://github.com/user-attachments/assets/10bf503a-bce6-4fce-9029-416c9f2eaa4e)
 # All the Applications in this repo are build using Flutter with ❤️.
 
 This Repo is the collection of flutter applications ui are design and develop by - [@m-aqsam](https://github.com/m-aqsam) using flutter with ❤️.
