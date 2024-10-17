@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:nike_ecommerce_app/components/ProfileOption.dart';
-import 'package:image_picker/image_picker.dart';
 
 class Profile_Page extends StatefulWidget {
   const Profile_Page({super.key});
@@ -128,7 +127,7 @@ class _Profile_PageState extends State<Profile_Page> {
           },
         ),
         ProfileOption(
-          optionName: "Help \& Support",
+          optionName: "Help & Support",
           onTap: () {
             // Code
           },
