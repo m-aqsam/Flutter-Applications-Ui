@@ -28,7 +28,7 @@ class _MyListViewState extends State<MyListView> {
           "The forward-thinking design of this latest signature shoe."
     },
     {
-      "shoeImage": "lib/images/shoes6.png",
+      "shoeImage": "lib/images/shoes4.png",
       "shoeName": "Zoey Bennett",
       "shoePrice": "\$180",
       "originalPrice": "\$210",
@@ -36,7 +36,7 @@ class _MyListViewState extends State<MyListView> {
           "The forward-thinking design of this latest signature shoe."
     },
     {
-      "shoeImage": "lib/images/shoes4.png",
+      "shoeImage": "lib/images/shoes9.png",
       "shoeName": "Zoey Bennett",
       "shoePrice": "\$250",
       "originalPrice": "\$270",
@@ -72,7 +72,7 @@ class _MyListViewState extends State<MyListView> {
                 SizedBox(height: 40),
                 // Shoe Image
 
-                Container(
+                SizedBox(
                   height: 190,
                   // color: Colors.white,
                   child: Image.asset(
