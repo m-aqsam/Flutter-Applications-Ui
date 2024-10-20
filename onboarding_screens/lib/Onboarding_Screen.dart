@@ -1,6 +1,7 @@
 // ignore_for_file: camel_case_types, prefer_final_fields, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:onboarding_screens/Login_Screen.dart';
 import 'package:onboarding_screens/OnBoarding_Screens/ContentScreen.dart';
 
 import 'package:onboarding_screens/components/NextButton.dart';
@@ -15,6 +16,7 @@ class OnBoarding_Screen extends StatefulWidget {
 
 class _OnBoarding_ScreenState extends State<OnBoarding_Screen> {
   PageController _controller = PageController();
+  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,6 +24,11 @@ class _OnBoarding_ScreenState extends State<OnBoarding_Screen> {
         children: [
           PageView(
             controller: _controller,
+            onPageChanged: (int index) {
+              setState(() {
+                currentIndex = index;
+              });
+            },
             children: [
               // Screen 1
               ContentScreen(
@@ -51,11 +58,6 @@ class _OnBoarding_ScreenState extends State<OnBoarding_Screen> {
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              //Image
-
-              // Text
-
-              // PageIndicator
               Container(
                 alignment: Alignment(0, 0.75),
                 child: SmoothPageIndicator(
@@ -74,10 +76,17 @@ class _OnBoarding_ScreenState extends State<OnBoarding_Screen> {
 
               GestureDetector(
                 onTap: () {
-                  _controller.nextPage(
-                    duration: Duration(milliseconds: 500),
-                    curve: Curves.easeIn,
-                  );
+                  if (currentIndex == 2) {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Login_Screen()));
+                  } else {
+                    _controller.nextPage(
+                      duration: Duration(milliseconds: 500),
+                      curve: Curves.easeIn,
+                    );
+                  }
                 },
                 child: NextButton(),
               ),
