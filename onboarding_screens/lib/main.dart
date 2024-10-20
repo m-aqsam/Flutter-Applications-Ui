@@ -1,23 +1,15 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:onboarding_screens/Onboarding_Screen.dart';
+import 'package:onboarding_screens/app.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  // * Built using Flutter with ❤️ by Aqsam.
+  // ! Give Your Feedback
+  // ? Got any question
+  // Todo: Let's Connect
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: OnBoarding_Screen(),
-      ),
-    );
-  }
-}
+
