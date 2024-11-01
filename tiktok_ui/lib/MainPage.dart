@@ -46,6 +46,7 @@ class _HomePageState extends State<MainPage> {
           BottomNavigationBarItem(icon: Icon(Icons.inbox), label: "Inbox"),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
         ],
+        //
       ),
     );
   }
