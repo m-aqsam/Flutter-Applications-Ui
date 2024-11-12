@@ -280,7 +280,7 @@ class _Profile_PageState extends State<Profile_Page> {
             },
           ),
           ProfileOption(
-            optionName: "Help \& Support",
+            optionName: "Help & Support",
             onTap: () {
               // Code
             },
