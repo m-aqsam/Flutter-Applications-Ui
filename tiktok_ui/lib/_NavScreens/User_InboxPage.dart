@@ -26,7 +26,7 @@ class User_InboxPage extends StatelessWidget {
           children: [
             // Stories
 
-            Container(
+            SizedBox(
               height: 110,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
