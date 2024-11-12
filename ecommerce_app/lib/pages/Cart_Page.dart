@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class Cart_Page extends StatelessWidget {
-  Cart_Page({super.key});
+  const Cart_Page({super.key});
 
   // Remove Item from Cart
 
@@ -86,7 +86,7 @@ class Cart_Page extends StatelessWidget {
                           tileColor: Theme.of(context).colorScheme.primary,
                           title: Text(item.name),
                           subtitle: Text(item.price.toStringAsFixed(2)),
-                          leading: Container(
+                          leading: SizedBox(
                             height: 90,
                             width: 60,
                             //color: Colors.amber,
