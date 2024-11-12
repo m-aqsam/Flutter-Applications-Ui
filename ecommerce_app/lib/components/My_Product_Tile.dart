@@ -7,7 +7,7 @@ import 'package:provider/provider.dart';
 
 class My_Product_Tile extends StatelessWidget {
   final Product product;
-  My_Product_Tile({
+  const My_Product_Tile({
     super.key,
     required this.product,
   });
@@ -121,7 +121,7 @@ class My_Product_Tile extends StatelessWidget {
                   // Product Price
 
                   Text(
-                    "\$ " + product.price.toStringAsFixed(2),
+                    "\$ ${product.price.toStringAsFixed(2)}",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
