@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class ProfileOption extends StatelessWidget {
   final String optionName;
   final void Function()? onTap;
-  ProfileOption({
+  const ProfileOption({
     super.key,
     required this.optionName,
     required this.onTap,
