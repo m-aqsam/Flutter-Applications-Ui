@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class Shop_Page extends StatelessWidget {
-  Shop_Page({super.key});
+  const Shop_Page({super.key});
 
   //
   @override
@@ -42,7 +42,7 @@ class Shop_Page extends StatelessWidget {
 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: Container(
+            child: SizedBox(
               height: 135,
               // color: Colors.amber,
               child: ListView.builder(
