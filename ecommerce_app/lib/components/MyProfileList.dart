@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class MyProfileList extends StatelessWidget {
   final String imagePath;
   final String text;
-  MyProfileList({
+  const MyProfileList({
     super.key,
     required this.imagePath,
     required this.text,
@@ -19,7 +19,7 @@ class MyProfileList extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             child: Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.grey[100],
                 borderRadius: BorderRadius.circular(12),
@@ -35,7 +35,7 @@ class MyProfileList extends StatelessWidget {
 
           Text(
             text,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 12,
             ),
           )
