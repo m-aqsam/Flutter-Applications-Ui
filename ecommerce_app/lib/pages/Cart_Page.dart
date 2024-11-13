@@ -47,7 +47,8 @@ class Cart_Page extends StatelessWidget {
     // Get Access to the cart
     final cart = context.watch<Shop>().cart;
 
-    // **************** Scaffold
+    // ***************** Scaffold
+
     return Scaffold(
       // App Bar
       appBar: AppBar(
