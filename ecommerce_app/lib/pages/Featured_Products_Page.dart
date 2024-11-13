@@ -42,7 +42,7 @@ class Featured_Product_Page extends StatelessWidget {
             // get each individual product from shop
             final product = products[index];
 
-            // return as a product tile in ui
+            // Return as a product tile in ui
             return My_Product_Tile(product: product);
           },
         ),
