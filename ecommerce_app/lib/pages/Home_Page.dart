@@ -17,7 +17,7 @@ class Home_Page extends StatefulWidget {
 class _Home_PageState extends State<Home_Page> {
   int _selectedIndex = 0;
 
-  // NavigateBottomBar Method.
+  // NavigateBottomBar Method
 
   void navigateBottomBar(int index) {
     setState(() {
