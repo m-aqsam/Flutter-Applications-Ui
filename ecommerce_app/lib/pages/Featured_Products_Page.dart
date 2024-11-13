@@ -39,7 +39,7 @@ class Featured_Product_Page extends StatelessWidget {
           ),
           itemCount: products.length,
           itemBuilder: (context, index) {
-            // get each individual product from shop
+            // Get each individual product from shop
             final product = products[index];
 
             // Return as a product tile in ui
