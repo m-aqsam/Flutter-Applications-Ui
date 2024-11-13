@@ -1,12 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ecommerce_app/components/Carousel_Slider.dart';
 import 'package:ecommerce_app/components/Featued_Product_Tile.dart';
 import 'package:ecommerce_app/components/My_Product_Tile.dart';
 import 'package:ecommerce_app/components/Search_Bar.dart';
 import 'package:ecommerce_app/models/Feature_List.dart';
-import 'package:ecommerce_app/models/Product.dart';
 import 'package:ecommerce_app/models/Shop.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
