@@ -59,7 +59,7 @@ class Intro_Page extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      // Icon
+                      // Icon.
 
                       Icon(
                         Icons.navigate_next_rounded,
