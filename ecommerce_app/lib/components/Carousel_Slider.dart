@@ -48,7 +48,7 @@ class Carusel_Slider extends StatelessWidget {
         initialPage: 0,
         enableInfiniteScroll: true,
         reverse: false,
-        //autoPlay: true,
+        autoPlay: true,
         autoPlayInterval: const Duration(seconds: 4),
         autoPlayAnimationDuration: const Duration(milliseconds: 800),
         autoPlayCurve: Curves.fastOutSlowIn,
