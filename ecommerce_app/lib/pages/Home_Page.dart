@@ -25,7 +25,7 @@ class _Home_PageState extends State<Home_Page> {
     });
   }
 
-  // List of Bottom Nav Bar Tabs.
+  // List of Bottom Nav Bar Tabs
 
   List<Widget> _pages = [
     Shop_Page(),
