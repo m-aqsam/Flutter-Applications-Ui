@@ -201,7 +201,7 @@ class _Profile_PageState extends State<Profile_Page> {
                           ],
                         ),
                       ),
-                      // ************** Store Followed
+                      // ************* Store Followed
                       Container(
                         child: Column(
                           children: [
