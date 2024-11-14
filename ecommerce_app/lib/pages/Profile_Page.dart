@@ -227,7 +227,7 @@ class _Profile_PageState extends State<Profile_Page> {
             ),
           ),
 
-          SizedBox(height: 18),
+          SizedBox(height: 12),
 
           // List
 
@@ -253,7 +253,7 @@ class _Profile_PageState extends State<Profile_Page> {
             ],
           ),
 
-          SizedBox(height: 18),
+          SizedBox(height: 12),
 
           // Profile Options
 
@@ -286,7 +286,7 @@ class _Profile_PageState extends State<Profile_Page> {
             },
           ),
 
-          SizedBox(height: 15),
+          SizedBox(height: 8),
 
           // Logout
 
