@@ -36,7 +36,7 @@ class Shop_Page extends StatelessWidget {
 
           SizedBox(height: 10),
 
-          // *************** Featured Products ****************
+          // **************** Featured Products ****************
 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
