@@ -288,7 +288,7 @@ class _Profile_PageState extends State<Profile_Page> {
 
           SizedBox(height: 8),
 
-          // Logout
+          // Logout.
 
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 50),
